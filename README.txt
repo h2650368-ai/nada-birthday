@@ -1,17 +1,28 @@
-NADA BIRTHDAY - STATIC WEBSITE
+تحديث موقع عيد ميلاد ندى
 
-Files:
+الملفات:
 - index.html
 - style.css
 - script.js
-- images/nada_photos/ (the four supplied photos)
 
-PUBLISH ON GITHUB PAGES:
-1. Create a PUBLIC repository named nada-birthday.
-2. Upload the CONTENTS of this folder to the repository root (index.html must be at the root).
-3. Open Settings > Pages.
-4. Under Build and deployment choose Deploy from a branch.
-5. Select branch main and folder /(root), then Save.
-6. Wait for the published URL shown in Settings > Pages.
+طريقة الرفع:
+1) افتح مستودع GitHub.
+2) افتح كل ملف قديم واضغط Edit (القلم).
+3) امسح محتواه والصق محتوى الملف الجديد بنفس الاسم.
+4) اضغط Commit changes.
+5) كرر للملفات الثلاثة.
 
-The song button opens the Anghami song page in a new tab, then continues to the photo gallery. The browser/site does not stream copyrighted audio itself.
+الصور:
+اترك ملفات الصور الأربعة الموجودة في جذر المستودع كما هي:
+nada-1.jpg
+nada-2.jpg
+nada-3.png
+nada-4.jpg
+
+الأغنية:
+ارفع ملف الأغنية إلى جذر المستودع وسمّه بالضبط:
+nada-song.mp3
+
+بعد الرفع افتح الموقع واعمل تحديث قوي/افتحه في تبويب خاص لو ظهرت نسخة قديمة.
+
+ملاحظة: كلمة المرور داخل JavaScript للّفتة التفاعلية فقط وليست حماية أمنية حقيقية.

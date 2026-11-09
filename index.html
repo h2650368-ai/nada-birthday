@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170812">
+  <meta name="description" content="A birthday surprise made especially for Nada">
+  <title>For Nada ♥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="sparkle-layer" id="sparkleLayer"></div>
+
+  <main>
+    <section class="screen active" id="countScreen" aria-label="Birthday countdown">
+      <div class="mini-label">A LITTLE SURPRISE FOR NADA</div>
+      <div class="orbit-heart">♡</div>
+      <p class="intro-line">في حاجة حلوة مستنياكي...</p>
+      <div class="count-number" id="countNumber">10</div>
+      <div class="count-caption">GET READY, BEAUTIFUL</div>
+      <div class="progress-track"><span id="progressBar"></span></div>
+      <div class="tiny-stars">✦　♡　✧　♡　✦</div>
+    </section>
+
+    <section class="screen celebration-screen" id="celebrationScreen">
+      <div class="confetti-word" id="birthdayWords">
+        <span class="english-small">TODAY IS ALL ABOUT YOU</span>
+        <h1>HAPPY BIRTHDAY<br><em>TO YOU</em></h1>
+        <div class="celebration-hearts">♡ ✦ ♡ ✧ ♡</div>
+      </div>
+      <div class="love-word hidden" id="loveWords">
+        <span class="english-small">FROM MY HEART TO YOURS</span>
+        <h2>I <span>LOVE</span> YOU</h2>
+        <div class="love-subtitle">يا أجمل صدفة وأحلى حكاية 🤍</div>
+      </div>
+      <button class="main-button hidden" id="enterButton">ادخلي شوفي مفاجأتك <span>♡</span></button>
+    </section>
+
+    <section class="screen password-screen" id="passwordScreen">
+      <div class="password-card">
+        <div class="lock-icon">♡</div>
+        <div class="mini-label">A SECRET LITTLE PLACE</div>
+        <h2>بس قبل ما تدخلي...</h2>
+        <p>في تاريخ مميز أكيد مش نسيتيه 🤍</p>
+        <form id="passwordForm">
+          <input id="passwordInput" type="password" inputmode="numeric" placeholder="اكتبي الباسورد هنا" autocomplete="off" aria-label="Password">
+          <button class="main-button" type="submit">افتحي الألبوم ♥</button>
+          <div class="password-error" id="passwordError" aria-live="polite"></div>
+        </form>
+        <div class="password-hint">HINT: A VERY SPECIAL DATE</div>
+      </div>
+    </section>
+
+    <section class="screen album-screen" id="albumScreen">
+      <header class="album-header">
+        <div class="mini-label">OUR LITTLE WORLD</div>
+        <div class="header-heart">♥</div>
+        <h1>كل سنة وانتي <em>أحلى حاجة</em></h1>
+        <p>أربع صور، وألف ذكرى حلوة، ولسه في حكايات كتير جاية...</p>
+        <div class="date-ribbon">10 · 11 · 2009 <span>✦</span> NADA'S DAY</div>
+      </header>
+
+      <div class="gallery-heading">
+        <span></span><b>MEMORIES MADE OF LOVE</b><span></span>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo-card photo-one">
+          <div class="photo-frame">
+            <img src="nada-1.jpg" alt="صورة ندى الأولى">
+            <span class="photo-number">01</span>
+          </div>
+          <figcaption>كل سنه وانتي طيبه يا اجمل حاجه في حياتي🤍🫶🏻</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-two">
+          <div class="photo-frame">
+            <img src="nada-2.jpg" alt="صورة ندى الثانية">
+            <span class="photo-number">02</span>
+          </div>
+          <figcaption>بحبك ي نور عيني ♥️</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-three">
+          <div class="photo-frame">
+            <img src="nada-3.png" alt="صورة ندى الثالثة">
+            <span class="photo-number">03</span>
+          </div>
+          <figcaption>🤍🫶🏻</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-four">
+          <div class="photo-frame">
+            <img src="nada-4.jpg" alt="صورة ندى الرابعة">
+            <span class="photo-number">04</span>
+          </div>
+          <figcaption>🤍🫶🏻</figcaption>
+        </figure>
+      </div>
+
+      <div class="album-footer-note">
+        <span>✧</span>
+        <p>مش مجرد صور... دي لحظات حلوة حبيت أحتفظ بيها ليكي</p>
+        <span>✧</span>
+      </div>
+
+      <button class="main-button letter-open-button" id="letterButton">لسه فيه جواب صغير ليكي 💌</button>
+
+      <article class="letter-card hidden" id="letterCard">
+        <div class="letter-topline">A LETTER FOR YOU <span>♥</span></div>
+        <h2>إلى ندى...</h2>
+        <p>كل سنه وانتي طيبه يا اجمل ما في حياتي 🤍 🫶🏻</p>
+        <p>يارب تكون سنه سعيده عليكي وتحققي كل اللي نفسك فيه♥️</p>
+        <p>وتبقي سنه كلها خير ليكي وللي بيحبوكي وبتحبيهم 🤍🤍</p>
+        <p>هديه بسيطه كده وان شاء الله ربنا يقدرني واجيبلك احلي هديه لاحلي ندي في الدنيا</p>
+        <div class="letter-signature">من قلبي ليكي 🤍</div>
+      </article>
+
+      <footer>MADE ESPECIALLY FOR NADA <span>♥</span></footer>
+    </section>
+  </main>
+
+  <audio id="birthdaySong" preload="metadata" src="nada-song.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
